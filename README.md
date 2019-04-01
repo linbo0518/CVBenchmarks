@@ -19,19 +19,19 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 
 | Network Arch | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
 | --- | --- | ---: | ---: | ---: | :---: |
-| MobileNet (1.0) | 1$\times$3$\times$224$\times$224 | 47.39 | 4.99 | 485 | \[[1]\] |
-| MobileNet v2 (1.0) | 1$\times$3$\times$224$\times$224 | 69.97 | 7.87 | 491 | \[[2]\] |
-| ResNet50 | 1$\times$3$\times$224$\times$224 | 100.24 | 8.36 | 707 | \[[3]\] |
+| MobileNet (1.0) | 1x3x224x224 | 47.39 | 4.99 | 485 | \[[1]\] |
+| MobileNet v2 (1.0) | 1x3x224x224 | 69.97 | 7.87 | 491 | \[[2]\] |
+| ResNet50 | 1x3x224x224 | 100.24 | 8.36 | 707 | \[[3]\] |
 
 **Detection**
 
 | Network Arch (Backbone) | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
 | --- | --- | ---: | ---: | ---: | :---: |
-| Faster RCNN (ResNet50) | 1$\times$3$\times$800$\times$800 | 15480.15 | 335.64 | 2955 | \[[4]\] |
-| SSD (MobileNet (1.0)) | 1$\times$3$\times$512$\times$512 | 468.88 | 24.21 | 783 | \[[5]\] |
-| SSD (ResNet50) | 1$\times$3$\times$512$\times$512 | 718.59 | 31.37 | 1075 | \[[5]\] |
-| YOLO v3 (MobileNet (1.0)) | 1$\times$3$\times$416$\times$416 | 500.80 | 19.32 | 779 | \[[6]\] |
-| YOLO v3 (DarkNet53) | 1$\times$3$\times$416$\times$416 | 865.41 | 24.96 | 1115 | \[[6]\] |
+| Faster RCNN (ResNet50) | 1x3x800x800 | 15480.15 | 335.64 | 2955 | \[[4]\] |
+| SSD (MobileNet (1.0)) | 1x3x512x512 | 468.88 | 24.21 | 783 | \[[5]\] |
+| SSD (ResNet50) | 1x3x512x512 | 718.59 | 31.37 | 1075 | \[[5]\] |
+| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 | 500.80 | 19.32 | 779 | \[[6]\] |
+| YOLO v3 (DarkNet53) | 1x3x416x416 | 865.41 | 24.96 | 1115 | \[[6]\] |
 
 ---
 
@@ -50,19 +50,19 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 
 | Network Arch | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
 | --- | --- | ---: | ---: | ---: | :---: |
-| MobileNet (1.0) | 1$\times$3$\times$224$\times$224 | 8.23 | 2.19 | 511 | \[[1]\] |
-| MobileNet v2 (1.0) | 1$\times$3$\times$224$\times$224 | 8.15 | 3.91 | 513 | \[[2]\] |
-| ResNet50 | 1$\times$3$\times$224$\times$224 | 27.48 | 6.29 | 731 | \[[3]\] |
+| MobileNet (1.0) | 1x3x224x224 | 8.23 | 2.19 | 511 | \[[1]\] |
+| MobileNet v2 (1.0) | 1x3x224x224 | 8.15 | 3.91 | 513 | \[[2]\] |
+| ResNet50 | 1x3x224x224 | 27.48 | 6.29 | 731 | \[[3]\] |
 
 **Detection**
 
 | Network Arch (Backbone) | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
 | --- | --- | ---: | ---: | ---: | :---: |
-| Faster RCNN (ResNet50) | 1$\times$3$\times$800$\times$800 | 5565.82 | 303.54 | 2957 | \[[4]\] |
-| SSD (MobileNet (1.0)) | 1$\times$3$\times$512$\times$512 | 90.14 | 13.79 | 785 | \[[5]\] |
-| SSD (ResNet50) | 1$\times$3$\times$512$\times$512 | 198.66 | 22.53 | 1077 | \[[5]\] |
-| YOLO v3 (MobileNet (1.0)) | 1$\times$3$\times$416$\times$416 | 155.25 | 9.80 | 783 | \[[6]\] |
-| YOLO v3 (DarkNet53) | 1$\times$3$\times$416$\times$416 | 296.47 | 17.73 | 1113 | \[[6]\] |
+| Faster RCNN (ResNet50) | 1x3x800x800 | 5565.82 | 303.54 | 2957 | \[[4]\] |
+| SSD (MobileNet (1.0)) | 1x3x512x512 | 90.14 | 13.79 | 785 | \[[5]\] |
+| SSD (ResNet50) | 1x3x512x512 | 198.66 | 22.53 | 1077 | \[[5]\] |
+| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 | 155.25 | 9.80 | 783 | \[[6]\] |
+| YOLO v3 (DarkNet53) | 1x3x416x416 | 296.47 | 17.73 | 1113 | \[[6]\] |
 
 ---
 
