@@ -33,7 +33,7 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 | YOLO v3 (MobileNet (1.0)) | 1$\times$3$\times$416$\times$416 | 500.80 | 19.32 | 779 | \[[6]\] |
 | YOLO v3 (DarkNet53) | 1$\times$3$\times$416$\times$416 | 865.41 | 24.96 | 1115 | \[[6]\] |
 
---
+---
 
 **Env Setup**
 
@@ -64,7 +64,7 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 | YOLO v3 (MobileNet (1.0)) | 1$\times$3$\times$416$\times$416 | 155.25 | 9.80 | 783 | \[[6]\] |
 | YOLO v3 (DarkNet53) | 1$\times$3$\times$416$\times$416 | 296.47 | 17.73 | 1113 | \[[6]\] |
 
---
+---
 
 [gluon-cv]:https://gluon-cv.mxnet.io
 [1]:https://arxiv.org/abs/1704.04861
