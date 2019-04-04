@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 ## CV Benchmarks
 
 Benchmarks for popular classification and object detection models on CPUs and GPUs.
@@ -65,6 +67,7 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 | YOLO v3 (DarkNet53) | 1x3x416x416 | 296.47 | 17.73 | 1113 | \[[6]\] |
 
 ---
+\\(\pm \times\\)
 
 [gluon-cv]:https://gluon-cv.mxnet.io
 [1]:https://arxiv.org/abs/1704.04861
