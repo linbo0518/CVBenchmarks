@@ -14,24 +14,26 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 * cuDNN: 5.1.5
 * Python: 3.6.8
 * MXNet: 1.4.0 w/o mkl
+* TVM: 0.6.dev
 
 **Classification**
 
-| Network Arch | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
-| --- | --- | ---: | ---: | ---: | :---: |
-| MobileNet (1.0) | 1x3x224x224 | 47.39 | 4.99 | 485 | \[[1]\] |
-| MobileNet v2 (1.0) | 1x3x224x224 | 69.97 | 7.87 | 491 | \[[2]\] |
-| ResNet50 | 1x3x224x224 | 100.24 | 8.36 | 707 | \[[3]\] |
+| Network Arch       | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | TVM CPU time(ms) | TVM GPU time(ms) | TVM VRAM(MB) | Citation |
+| ------------------ | ----------- | -----------: | -----------: | -------: | ---------------: | ---------------: | -----------: | :------: |
+| MobileNet (1.0)    | 1x3x224x224 |        48.00 |         4.55 |      477 |             3.10 |             0.92 |          403 | \[[1]\]  |
+| MobileNet v2 (1.0) | 1x3x224x224 |        62.06 |         8.53 |      483 |             3.12 |             1.65 |          407 | \[[2]\]  |
+| VGG16              | 1x3x224x224 |       420.59 |         5.74 |     1577 |            82.82 |             4.23 |         1053 | \[[7]\]  |
+| ResNet50           | 1x3x224x224 |        93.07 |        10.81 |      701 |            18.38 |             3.90 |          529 | \[[3]\]  |
 
 **Detection**
 
-| Network Arch (Backbone) | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
-| --- | --- | ---: | ---: | ---: | :---: |
-| Faster RCNN (ResNet50) | 1x3x800x800 | 15480.15 | 335.64 | 2955 | \[[4]\] |
-| SSD (MobileNet (1.0)) | 1x3x512x512 | 468.88 | 24.21 | 783 | \[[5]\] |
-| SSD (ResNet50) | 1x3x512x512 | 718.59 | 31.37 | 1075 | \[[5]\] |
-| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 | 500.80 | 19.32 | 779 | \[[6]\] |
-| YOLO v3 (DarkNet53) | 1x3x416x416 | 865.41 | 24.96 | 1115 | \[[6]\] |
+| Network Arch (Backbone)   | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) |    TVM CPU time(ms) |    TVM GPU time(ms) |        TVM VRAM(MB) | Citation |
+| ------------------------- | ----------- | -----------: | -----------: | -------: | ------------------: | ------------------: | ------------------: | :------: |
+| Faster RCNN (ResNet50)    | 1x3x800x800 |     15480.15 |       371.80 |     2945 | tvm not support yet | tvm not support yet | tvm not support yet | \[[4]\]  |
+| SSD (MobileNet (1.0))     | 1x3x512x512 |       408.30 |        24.29 |      775 |              300.18 | tvm not support yet | tvm not support yet | \[[5]\]  |
+| SSD (ResNet50)            | 1x3x512x512 |       678.04 |        33.02 |     1065 |              377.31 | tvm not support yet | tvm not support yet | \[[5]\]  |
+| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 |       479.82 |        17.72 |      771 |               61.70 | tvm not support yet | tvm not support yet | \[[6]\]  |
+| YOLO v3 (DarkNet53)       | 1x3x416x416 |       843.06 |        27.55 |     1109 |              119.26 | tvm not support yet | tvm not support yet | \[[6]\]  |
 
 ---
 
@@ -45,24 +47,26 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 * cuDNN: 7.5.0
 * Python: 3.6.8
 * MXNet: 1.4.0 w/ mkl
+* TVM: 0.6.dev
 
 **Classification**
 
-| Network Arch | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
-| --- | --- | ---: | ---: | ---: | :---: |
-| MobileNet (1.0) | 1x3x224x224 | 8.23 | 2.19 | 511 | \[[1]\] |
-| MobileNet v2 (1.0) | 1x3x224x224 | 8.15 | 3.91 | 513 | \[[2]\] |
-| ResNet50 | 1x3x224x224 | 27.48 | 6.29 | 731 | \[[3]\] |
+| Network Arch       | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | TVM CPU time(ms) | TVM GPU time(ms) | TVM VRAM(MB) | Citation |
+| ------------------ | ----------- | -----------: | -----------: | -------: | ---------------: | ---------------: | -----------: | :------: |
+| MobileNet (1.0)    | 1x3x224x224 |         8.30 |         2.22 |      503 |             5.92 |             0.74 |          407 | \[[1]\]  |
+| MobileNet v2 (1.0) | 1x3x224x224 |        18.85 |         3.98 |      505 |             4.29 |             0.89 |          409 | \[[2]\]  |
+| VGG16              | 1x3x224x224 |        89.55 |         5.46 |     1605 |           178.67 |             4.21 |         1061 | \[[7]\]  |
+| ResNet50           | 1x3x224x224 |        28.13 |         6.37 |      723 |            42.74 |             3.42 |          535 | \[[3]\]  |
 
 **Detection**
 
-| Network Arch (Backbone) | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) | Citation | 
-| --- | --- | ---: | ---: | ---: | :---: |
-| Faster RCNN (ResNet50) | 1x3x800x800 | 5565.82 | 303.54 | 2957 | \[[4]\] |
-| SSD (MobileNet (1.0)) | 1x3x512x512 | 90.14 | 13.79 | 785 | \[[5]\] |
-| SSD (ResNet50) | 1x3x512x512 | 198.66 | 22.53 | 1077 | \[[5]\] |
-| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 | 155.25 | 9.80 | 783 | \[[6]\] |
-| YOLO v3 (DarkNet53) | 1x3x416x416 | 296.47 | 17.73 | 1113 | \[[6]\] |
+| Network Arch (Backbone)   | Input Shape | CPU time(ms) | GPU time(ms) | VRAM(MB) |    TVM CPU time(ms) |    TVM GPU time(ms) |        TVM VRAM(MB) | Citation |
+| ------------------------- | ----------- | -----------: | -----------: | -------: | ------------------: | ------------------: | ------------------: | :------: |
+| Faster RCNN (ResNet50)    | 1x3x800x800 |      5565.82 |       326.32 |     2949 | tvm not support yet | tvm not support yet | tvm not support yet | \[[4]\]  |
+| SSD (MobileNet (1.0))     | 1x3x512x512 |        95.28 |        15.93 |      777 |              726.48 | tvm not support yet | tvm not support yet | \[[5]\]  |
+| SSD (ResNet50)            | 1x3x512x512 |       211.78 |        23.25 |     1069 |              941.38 | tvm not support yet | tvm not support yet | \[[5]\]  |
+| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 |       165.48 |        10.96 |      775 |              156.73 | tvm not support yet | tvm not support yet | \[[6]\]  |
+| YOLO v3 (DarkNet53)       | 1x3x416x416 |       315.16 |        18.64 |     1105 |              359.61 | tvm not support yet | tvm not support yet | \[[6]\]  |
 
 ---
 
@@ -80,24 +84,26 @@ Pretrained model parameters provided by [gluon-cv] model zoo
 
 **Classification**
 
-| Network Arch | Input Shape | CPU time(ms) | TVM CPU time(ms) | Citation | 
-| --- | --- | ---: | ---: | :---: |
-| MobileNet (1.0) | 1x3x224x224 | 34.05 | 8.71 | \[[1]\] |
-| MobileNet v2 (1.0) | 1x3x224x224 | 64.42 | 8.41 | \[[2]\] |
-| VGG16 | 1x3x224x224 | 261.23 | 212.48 | \[[7]\] |
-| ResNet50 | 1x3x224x224 | 80.02 | 67.62 | \[[3]\] |
+| Network Arch       | Input Shape | CPU time(ms) | TVM CPU time(ms) | Citation |
+| ------------------ | ----------- | -----------: | ---------------: | :------: |
+| MobileNet (1.0)    | 1x3x224x224 |        34.05 |             8.71 | \[[1]\]  |
+| MobileNet v2 (1.0) | 1x3x224x224 |        64.42 |             8.41 | \[[2]\]  |
+| VGG16              | 1x3x224x224 |       261.23 |           212.48 | \[[7]\]  |
+| ResNet50           | 1x3x224x224 |        80.02 |            67.62 | \[[3]\]  |
 
 **Detection**
 
-| Network Arch (Backbone) | Input Shape | CPU time(ms) | TVM CPU time(ms) | Citation | 
-| --- | --- | ---: | ---: | :---: |
-| Faster RCNN (ResNet50) | 1x3x800x800 | 16197.89 | tvm not support yet | \[[4]\] |
-| SSD (MobileNet (1.0)) | 1x3x512x512 | 372.46 | 1111.51 | \[[5]\] |
-| SSD (ResNet50) | 1x3x512x512 | 656.17 | 1350.06 | \[[5]\] |
-| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 | 562.84 | 205.64 | \[[6]\] |
-| YOLO v3 (DarkNet53) | 1x3x416x416 | 841.82 | 533.84 | \[[6]\] |
+| Network Arch (Backbone)   | Input Shape | CPU time(ms) |    TVM CPU time(ms) | Citation |
+| ------------------------- | ----------- | -----------: | ------------------: | :------: |
+| Faster RCNN (ResNet50)    | 1x3x800x800 |     16197.89 | tvm not support yet | \[[4]\]  |
+| SSD (MobileNet (1.0))     | 1x3x512x512 |       372.46 |             1111.51 | \[[5]\]  |
+| SSD (ResNet50)            | 1x3x512x512 |       656.17 |             1350.06 | \[[5]\]  |
+| YOLO v3 (MobileNet (1.0)) | 1x3x416x416 |       562.84 |              205.64 | \[[6]\]  |
+| YOLO v3 (DarkNet53)       | 1x3x416x416 |       841.82 |              533.84 | \[[6]\]  |
 
-**P.S.: the `TVM CPU time` of SSD should be caused by some kind of bug or mistake, the result on my MacBook Pro (15-inch, 2016) is really the case.**
+---
+
+**P.S. the `TVM CPU time` of SSD should be caused by some kind of bug or mistake, the result is really the case.**
 
 ---
 
